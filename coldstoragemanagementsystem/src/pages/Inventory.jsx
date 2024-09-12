@@ -47,6 +47,39 @@ function Inventory(){
 </div>
 </div>
    </div>
+   <div className="overflow-x-scroll px-3 mt-10">
+  <table className="min-w-full table-auto border-collapse">
+    <thead className="">
+      <tr>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Inventory Name</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Inventory Code</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Quantity</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Storage Temperature</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Storage Section Number</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Date of Entry</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Expiration Date</th>
+        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Supplier Name</th>
+   
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="bg-white">
+        <td className="px-4 py-2 border border-red-500 text-sm text-gray-700">John Doe</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">john@example.com</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
+        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
+     
+      </tr>
+   
+    </tbody>
+  </table>
+</div>
+
         </>
     )
 }

@@ -21,13 +21,13 @@ function Sidebar(){
     <div className="mt-8">
         <ul className="space-y-2">
             <li >
-                <Link to="/dashboard" className="px-3 py-2 bg-black text-white rounded-md flex items-center space-x-1">
+                <Link to="/" className="px-3 py-2 bg-black text-white rounded-md flex items-center space-x-1">
                  <MdDashboard className="text-sm"/>
              <p className="text-xs">Dashboard</p>
                 </Link>
              </li>
             <li> 
-                <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+                <Link  to="/inventory" className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
                 <IoBagSharp className="text-sm"/> <p className="text-xs">Manage Inventory </p>
                 </Link>
                 </li>

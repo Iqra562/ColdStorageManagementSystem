@@ -8,6 +8,7 @@ import { IoLogOutSharp } from "react-icons/io5";
 import { IoBagSharp } from "react-icons/io5";
 import { FaUserEdit } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
+import {Link} from "react-router-dom"
 function Sidebar(){
     return(
         <>
@@ -19,13 +20,34 @@ function Sidebar(){
     </h1>
     <div className="mt-8">
         <ul className="space-y-2">
-            <li className="px-3 py-2 bg-black text-white rounded-md flex items-center space-x-1"> <MdDashboard className="text-sm"/>
+            <li >
+                <Link to="/dashboard" className="px-3 py-2 bg-black text-white rounded-md flex items-center space-x-1">
+                 <MdDashboard className="text-sm"/>
              <p className="text-xs">Dashboard</p>
+                </Link>
              </li>
-            <li className="px-3 py-2   text-black rounded-md flex items-center space-x-1"> <IoBagSharp className="text-sm"/> <p className="text-xs">Manage Inventory </p></li>
-            <li className="px-3 py-2   text-black rounded-md flex items-center space-x-1"> <FaUserEdit className="text-sm"/> <p className="text-xs">Manage Supplier</p></li>
-            <li className="px-3 py-2   text-black rounded-md flex items-center space-x-1"> <FaBox className="text-sm"/> <p className="text-xs">Manage Storage</p></li>
-            <li className="px-3 py-2   text-black rounded-md flex items-center space-x-1"> <IoIosSettings className="text-sm"/> <p className="text-xs">Settings</p></li>
+            <li> 
+                <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+                <IoBagSharp className="text-sm"/> <p className="text-xs">Manage Inventory </p>
+                </Link>
+                </li>
+            <li > 
+            <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+                <FaUserEdit className="text-sm"/> <p className="text-xs">Manage Supplier</p>
+                </Link>
+                </li>
+            <li > 
+            <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+                <FaBox className="text-sm"/> <p className="text-xs">Manage Storage</p>
+                
+            </Link>
+                </li>
+            <li > 
+            <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+                <IoIosSettings className="text-sm"/> <p className="text-xs">Settings</p>
+                </Link>
+                
+                </li>
         </ul>
         <div>
             
@@ -33,10 +55,11 @@ function Sidebar(){
     </div>
 </div>
 <div className="last-div  border-t border-gray-300 pt-6 ">
-    <div className="px-3 py-2   text-black rounded-md flex items-center space-x-1">
-
+    <div >
+<Link className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
     <IoLogOutSharp className="text-sm"/>
    <h1 className="text-xs">Log out</h1>
+</Link>
     </div>
 </div>
  </div>

@@ -4,11 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MiniDrawer from './components/sidebarerror.jsx'
 import Sidebar from './components/sidebar.jsx'
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import AdminLayout from './Layout/AdminDashboard/AdminLayout.jsx'
+import Home from './pages/Home.jsx'
 function App() {
 
   return (
     <>
-<Sidebar/>
+<BrowserRouter>
+<Routes>
+  <Route path='/' element={<AdminLayout/>}>
+    <Route index  element={<Home/>}/>
+  </Route>
+</Routes>
+</BrowserRouter>
    
     </>
   )

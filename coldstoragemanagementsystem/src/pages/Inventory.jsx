@@ -6,7 +6,7 @@ import avatar from "../assets/images/avatar.jpg"
 function Inventory(){
     return(
         <>
-         <div className="flex justify-between items-start px-3 mt-5">
+         <div className="flex justify-between items-start px-3 mt-5 ">
 
 
   
@@ -47,34 +47,112 @@ function Inventory(){
 </div>
 </div>
    </div>
-   <div className="overflow-x-scroll px-3 mt-10">
-  <table className="min-w-full table-auto border-collapse">
+   <div className="border-b border-gray-50 mt-4 px-2 py-4 flex justify-end">
+  <button className="bg-black mr-6 text-white text-xs px-2 py-1 rounded-md transition duration-200">
+    + Add Inventory
+  </button>
+</div>
+
+   <div className=" overflow-x-auto px-3 mt-2 ">
+  <table className="min-w-full table-auto border-collapse ">
     <thead className="">
       <tr>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Inventory Name</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Inventory Code</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Quantity</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Storage Temperature</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Storage Section Number</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Date of Entry</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Expiration Date</th>
-        <th className="px-4 py-2  text-left text-sm font-normal text-gray-400">Supplier Name</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Inventory Name</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Inventory Code</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Quantity</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Storage Temperature</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Storage Section Number</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Date of Entry</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Expiration Date</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Supplier Name</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Edit</th>
+        <th className="px-4 py-2  text-left text-xs font-normal text-gray-400">Delete</th>
    
        
       </tr>
     </thead>
     <tbody>
-      <tr className="bg-white">
-        <td className="px-4 py-2 border border-red-500 text-sm text-gray-700">John Doe</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">john@example.com</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
-        <td className="px-4 py-2 border border-gray-300 text-sm text-gray-700">Admin</td>
-     
+    
+      <tr className="bg-white border-b border-gray-50 cursor-pointer hover:bg-gray-100">
+        <td className="px-4 py-2  text-xs text-black  ">ABC </td>
+        <td className="px-4 py-2  text-xs text-black  ">#111</td>
+        <td className="px-4 py-2  text-xs text-black  ">222222</td>
+        <td className="px-4 py-2  text-xs text-black  ">0c</td>
+        <td className="px-4 py-2  text-xs text-black  ">000000090</td>
+        <td className="px-4 py-2  text-xs text-black  ">1-1-111</td>
+        <td className="px-4 py-2  text-xs text-black  ">1-1-111</td>
+        <td className="px-4 py-2  text-xs text-black  ">John Doe</td>
+        <td className="px-4 py-2 text-xs text-black  ">
+  <button className="bg-black text-white text-xs  px-2 py-1 rounded-md  transition duration-200">
+    Edit
+  </button>
+ 
+</td>
+        <td className="px-4 py-2 text-xs text-black  ">
+ 
+  <button className="border  border-black  text-black text-xs px-2 py-1 rounded-md transition duration-200">
+    Delete
+  </button>
+</td>
+
+        
+        
       </tr>
+     
+      <tr className="bg-white border-b border-gray-50 cursor-pointer hover:bg-gray-100">
+        <td className="px-4 py-2  text-xs text-black  ">ABC </td>
+        <td className="px-4 py-2  text-xs text-black  ">#111</td>
+        <td className="px-4 py-2  text-xs text-black  ">222222</td>
+        <td className="px-4 py-2  text-xs text-black  ">0c</td>
+        <td className="px-4 py-2  text-xs text-black  ">000000090</td>
+        <td className="px-4 py-2  text-xs text-black  ">1-1-111</td>
+        <td className="px-4 py-2  text-xs text-black  ">1-1-111</td>
+        <td className="px-4 py-2  text-xs text-black  ">John Doe</td>
+        <td className="px-4 py-2 text-xs text-black  ">
+  <button className="bg-black text-white text-xs  px-2 py-1 rounded-md  transition duration-200">
+    Edit
+  </button>
+ 
+</td>
+        <td className="px-4 py-2 text-xs text-black  ">
+ 
+  <button className="border  border-black  text-black text-xs px-2 py-1 rounded-md transition duration-200">
+    Delete
+  </button>
+</td>
+
+        
+        
+      </tr>
+     
+      <tr className="bg-white border-b border-gray-50 cursor-pointer hover:bg-gray-100">
+        <td className="px-4 py-2  text-xs text-black  ">ABC </td>
+        <td className="px-4 py-2  text-xs text-black  ">#111</td>
+        <td className="px-4 py-2  text-xs text-black  ">222222</td>
+        <td className="px-4 py-2  text-xs text-black  ">0c</td>
+        <td className="px-4 py-2  text-xs text-black  ">000000090</td>
+        <td className="px-4 py-2  text-xs text-black  ">1-1-111</td>
+        <td className="px-4 py-2  text-xs text-black  ">1-1-111</td>
+        <td className="px-4 py-2  text-xs text-black  ">John Doe</td>
+        <td className="px-4 py-2 text-xs text-black  ">
+  <button className="bg-black text-white text-xs  px-2 py-1 rounded-md  transition duration-200">
+    Edit
+  </button>
+ 
+</td>
+        <td className="px-4 py-2 text-xs text-black  ">
+ 
+  <button className="border  border-black  text-black text-xs px-2 py-1 rounded-md transition duration-200">
+    Delete
+  </button>
+</td>
+
+        
+        
+      </tr>
+     
+    
+    
    
     </tbody>
   </table>

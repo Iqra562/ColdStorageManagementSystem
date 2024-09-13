@@ -17,7 +17,7 @@ function Appbar(){
     name="price"
     type="text"
     placeholder="Search..."
-    className="block w-full  rounded-md border-0 py-0.5 pl-7 pr-20 text-gray-300 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:ring-inset focus:ring-gray-400 "
+    className="block w-full  rounded-md border-0 py-0.5 pl-7 pr-20 text-gray-400 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:ring-inset focus:ring-gray-300 focus:outline-none"
   />
   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
 <CiSearch/>

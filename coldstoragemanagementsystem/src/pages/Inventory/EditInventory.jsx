@@ -1,12 +1,12 @@
 import React from "react";
 import Appbar from "../../components/Appbar";
-function AddInventory(){
+function EditInventory(){
 return(
     <>
     <Appbar/>
     <div className="px-6 mt-8">
         <div className="text-xl border-b  border-gray-100 pb-4">
-            <h1 className="text-lg font-semibold">Add Inventory</h1>
+            <h1 className="text-lg font-semibold">Update Inventory</h1>
         </div>
         <form action=" ">
             <div className="flex flex-col space-y-6">
@@ -45,7 +45,7 @@ return(
             </div>
             <div className="mt-6">
             <button className="bg-black text-white text-xs font-semibold px-3 py-1.5 rounded-md">
-                Add Inventory
+                Update Inventory
             </button>
         </div>
             </div>
@@ -55,4 +55,4 @@ return(
     </>
 )
 }
-export default AddInventory;
+export default EditInventory;

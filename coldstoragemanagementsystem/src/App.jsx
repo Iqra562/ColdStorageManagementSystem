@@ -9,6 +9,7 @@ import AdminLayout from './Layout/AdminDashboard/AdminLayout.jsx'
 import Home from './pages/Home.jsx'
 import Inventory from './pages/Inventory/Inventory.jsx'
 import AddInventory from './pages/Inventory/AddInventory.jsx'
+import EditInventory from './pages/Inventory/EditInventory.jsx'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
     <Route index  element={<Home/>}/>
     <Route path='/inventory' element={<Inventory/>}/>
     <Route path='/addinventory' element={<AddInventory/>}/>
+    <Route path='/editinventory' element={<EditInventory/>}/>
   </Route>
 </Routes>
 </BrowserRouter>

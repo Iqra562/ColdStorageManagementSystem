@@ -5,7 +5,7 @@ import { BiSolidMessage } from "react-icons/bi";
 import avatar from "../assets/images/avatar.jpg";
 import { Link } from "react-router-dom";
 import Appbar from "./Appbar";
-function TableComponent({columns,data, onEdit, onDelete,addForm}){
+function TableComponent({columns,data, onEdit, onDelete,addForm,editForm}){
     return(
         <>
      <Appbar/>
@@ -45,9 +45,11 @@ function TableComponent({columns,data, onEdit, onDelete,addForm}){
         <td className="px-4 py-2  text-xs text-black  ">{row.supplier} </td>
        
         <td className="px-4 py-2 text-xs text-black  ">
+            <Link to={editForm}>
    <button className="bg-black text-white text-xs  px-2 py-1 rounded-md  transition duration-200" onClick={()=>onEdit(row.id)}>
     Edit
    </button>
+            </Link>
    
    </td>
         <td className="px-4 py-2 text-xs text-black  ">

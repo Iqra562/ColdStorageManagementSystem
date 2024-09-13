@@ -7,7 +7,8 @@ import Sidebar from './components/sidebar.jsx'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import AdminLayout from './Layout/AdminDashboard/AdminLayout.jsx'
 import Home from './pages/Home.jsx'
-import Inventory from './pages/Inventory.jsx'
+import Inventory from './pages/Inventory/Inventory.jsx'
+import AddInventory from './pages/Inventory/AddInventory.jsx'
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
   <Route path='/' element={<AdminLayout/>}>
     <Route index  element={<Home/>}/>
     <Route path='/inventory' element={<Inventory/>}/>
+    <Route path='/addinventory' element={<AddInventory/>}/>
   </Route>
 </Routes>
 </BrowserRouter>

@@ -3,10 +3,13 @@ import { CiSearch } from "react-icons/ci";
 import { IoIosNotifications } from "react-icons/io";
 import { BiSolidMessage } from "react-icons/bi";
 import avatar from "../assets/images/avatar.jpg"
+import DeleteConfirmationModal from "../components/DeleteConfirmationModal";
 function Home(){
     return(
 
         <>
+    <DeleteConfirmationModal/>
+
        <div className="flex justify-between items-start px-3 mt-5">
 
    <div>

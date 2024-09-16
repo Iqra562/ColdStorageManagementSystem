@@ -10,6 +10,7 @@ import Home from './pages/Home.jsx'
 import Inventory from './pages/Inventory/Inventory.jsx'
 import AddInventory from './pages/Inventory/AddInventory.jsx'
 import EditInventory from './pages/Inventory/EditInventory.jsx'
+import DeleteConfirmationModal from './components/DeleteConfirmationModal.jsx'
 function App() {
 
   return (

@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { IoIosNotifications } from "react-icons/io";
 import { BiSolidMessage } from "react-icons/bi";
 import avatar from "../assets/images/avatar.jpg";
 import { Link } from "react-router-dom";
 import Appbar from "./Appbar";
+import DeleteConfirmationModal from "./DeleteConfirmationModal";
 function TableComponent({columns,data, onEdit, onDelete,addForm,editForm}){
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [deleteItemId, setDeleteItemId] = useState(null);
+  const handleDeleteClick = (id)=>{
+    setDeleteItemId(id);
+    setIsModalOpen(true)
+  }
+  const handleDeleteConfirm = () => {
+    onDelete(deleteItemId); 
+    setIsModalOpen(false); 
+  };
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
     return(
         <>
      <Appbar/>
@@ -54,7 +68,7 @@ function TableComponent({columns,data, onEdit, onDelete,addForm,editForm}){
    </td>
         <td className="px-4 py-2 text-xs text-black  ">
    
-   <button className="border  border-black  text-black text-xs px-2 py-1 rounded-md transition duration-200" onClick={()=>onDelete(row.id)}>
+   <button className="border  border-black  text-black text-xs px-2 py-1 rounded-md transition duration-1000"    onClick={() => handleDeleteClick(row.id)}>
     Delete
    </button>
    </td>
@@ -73,6 +87,12 @@ function TableComponent({columns,data, onEdit, onDelete,addForm,editForm}){
  </tbody>
 </table>
 </div>
+<DeleteConfirmationModal 
+  isOpen={isModalOpen}
+  onClose={handleModalClose}
+  onConfirm={handleDeleteConfirm}
+/>
+
         </>
     )
 }

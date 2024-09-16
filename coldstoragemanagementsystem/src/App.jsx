@@ -11,6 +11,7 @@ import Inventory from './pages/Inventory/Inventory.jsx'
 import AddInventory from './pages/Inventory/AddInventory.jsx'
 import EditInventory from './pages/Inventory/EditInventory.jsx'
 import DeleteConfirmationModal from './components/DeleteConfirmationModal.jsx'
+import Login from './pages/login.jsx'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
     <Route path='/addinventory' element={<AddInventory/>}/>
     <Route path='/editinventory' element={<EditInventory/>}/>
   </Route>
+    <Route path='/login' element={<Login/>}/>
 </Routes>
 </BrowserRouter>
    

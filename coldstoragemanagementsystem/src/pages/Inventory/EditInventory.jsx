@@ -5,7 +5,7 @@ return(
     <>
     <Appbar/>
     <div className="px-6 mt-8">
-  <div className="text-xl border-b border-gray-100 pb-4">
+  <div className="text-xl border-b border-gray-100 pb-4 mb-4">
     <h1 className="text-lg font-semibold">Update Inventory</h1>
   </div>
   <form action="">

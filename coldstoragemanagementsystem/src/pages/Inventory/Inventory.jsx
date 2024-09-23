@@ -74,7 +74,7 @@ function Inventory() {
       console.log(` item  id: ${id}`);
     };
   
-  return <TableComponent columns={columns} data={data}  onEdit={handleEdit} onDelete = {handleDelete} addForm="/addinventory"  editForm="/editinventory"/>;
+  return <TableComponent columns={columns} data={data}  onEdit={handleEdit} onDelete = {handleDelete} addForm="/addinventory"  editForm="/editinventory" addBtn="Add Inventory"/>;
 }
 
 export default Inventory;

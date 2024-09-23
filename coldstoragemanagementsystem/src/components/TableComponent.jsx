@@ -6,7 +6,7 @@ import avatar from "../assets/images/avatar.jpg";
 import { Link } from "react-router-dom";
 import Appbar from "./Appbar";
 import DeleteConfirmationModal from "./DeleteConfirmationModal";
-function TableComponent({columns,data, onEdit, onDelete,addForm,editForm}){
+function TableComponent({columns,data, onEdit, onDelete,addForm,editForm ,addBtn}){
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [deleteItemId, setDeleteItemId] = useState(null);
   const handleDeleteClick = (id)=>{
@@ -26,7 +26,7 @@ function TableComponent({columns,data, onEdit, onDelete,addForm,editForm}){
 <div className="border-b border-gray-50 mt-4 px-2 py-4 flex justify-end">
     <Link to={addForm}>
 <button className="bg-black mr-6 text-white text-xs px-2 py-1 rounded-md transition duration-200">
- + Add Inventory
+ + {addBtn}
 </button>
     </Link>
 </div>

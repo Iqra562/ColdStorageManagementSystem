@@ -4,7 +4,8 @@ import { IoIosNotifications } from "react-icons/io";
 import { BiSolidMessage } from "react-icons/bi";
 import avatar from "../assets/images/avatar.jpg"
 import DeleteConfirmationModal from "../components/DeleteConfirmationModal";
-import  TickParamsSelector from './chart.jsx'
+import ChartsOverviewDemo from "../components/chart.jsx";
+import Analytics from "../components/chart.jsx";
        
 function Home(){
     return(
@@ -56,7 +57,7 @@ function Home(){
 </div>
 </div>
       </div>
-     <TickParamsSelector/>
+<Analytics/>
 </>
     )
 }

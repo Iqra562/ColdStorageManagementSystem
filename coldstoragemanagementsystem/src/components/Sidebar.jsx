@@ -32,12 +32,12 @@ function Sidebar(){
                 </Link>
                 </li>
             <li > 
-            <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+            <Link  to="/suplier" className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
                 <FaUserEdit className="text-sm"/> <p className="text-xs">Manage Supplier</p>
                 </Link>
                 </li>
             <li > 
-            <Link  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
+            <Link to="/storage"  className="px-3 py-2   text-black rounded-md flex items-center space-x-1 hover:bg-gray-200">
                 <FaBox className="text-sm"/> <p className="text-xs">Manage Storage</p>
                 
             </Link>

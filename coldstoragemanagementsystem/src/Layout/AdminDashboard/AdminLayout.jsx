@@ -4,13 +4,11 @@ import Sidebar from "../../components/sidebar";
 function AdminLayout(){
 return(
     <>
-    <div className="flex "> 
-
-    <Sidebar/>
-    <div className="flex-1">
-
-    <Outlet/>
-    </div>
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="flex-1 overflow-y-auto">
+        <Outlet />
+      </div>
     </div>
     </>
 )

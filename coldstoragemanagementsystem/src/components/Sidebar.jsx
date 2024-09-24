@@ -10,10 +10,13 @@ import { FaUserEdit } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
 import {Link} from "react-router-dom"
 import { FaAnglesLeft } from "react-icons/fa6";
-function Sidebar({closeSidebar}){
+function Sidebar({closeSidebar,}){
     return(
         <>
-       <div className="main bg-gray-100 px-5 py-7 h-screen w-48">
+       <div className=" main bg-gray-100 px-5 py-7 h-screen w-48"
+       
+        
+       >
  <div className="relative h-full flex flex-col justify-between">
 <div>
     <div className="absolute right-0 lg:hidden"> <button onClick={closeSidebar}>

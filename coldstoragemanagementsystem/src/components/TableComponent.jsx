@@ -22,7 +22,6 @@ function TableComponent({columns,data, onEdit, onDelete,addForm,editForm ,addBtn
   };
     return(
         <>
-     <Appbar/>
 <div className="border-b border-gray-50 mt-4 px-2 py-4 flex justify-end">
     <Link to={addForm}>
 <button className="bg-black mr-6 text-white text-xs px-2 py-1 rounded-md transition duration-200">

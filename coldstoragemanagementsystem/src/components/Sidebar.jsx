@@ -9,12 +9,17 @@ import { IoBagSharp } from "react-icons/io5";
 import { FaUserEdit } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
 import {Link} from "react-router-dom"
-function Sidebar(){
+import { FaAnglesLeft } from "react-icons/fa6";
+function Sidebar({closeSidebar}){
     return(
         <>
-       <div className="main bg-gray-100 px-5 py-7 h-screen max-w-48">
- <div className=" h-full flex flex-col justify-between">
+       <div className="main bg-gray-100 px-5 py-7 h-screen w-48">
+ <div className="relative h-full flex flex-col justify-between">
 <div>
+    <div className="absolute right-0 lg:hidden"> <button onClick={closeSidebar}>
+         <FaAnglesLeft />
+        </button>
+         </div>
     <h1  className="font-semibold text-xs">
   Storage Dashboard
     </h1>

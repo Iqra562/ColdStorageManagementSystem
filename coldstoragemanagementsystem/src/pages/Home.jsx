@@ -6,19 +6,19 @@ import avatar from "../assets/images/avatar.jpg"
 import DeleteConfirmationModal from "../components/DeleteConfirmationModal";
 import ChartsOverviewDemo from "../components/chart.jsx";
 import Analytics from "../components/chart.jsx";
+import Appbar from "../components/Appbar.jsx";
        
 function Home(){
     return(
 
         <>
-    <DeleteConfirmationModal/>
-
-       <div className="flex justify-between items-start px-3 mt-5">
+       {/* <div className="flex justify-between items-start px-3 mt-5">
 
    <div>
     <h6>Today's Plan</h6>
     <p className="text-gray-300 text-[10px]">31 March 2016</p>
    </div>
+    </div> */}
      
 {/*     
       <div className="relative  rounded-md shadow-sm ">
@@ -36,7 +36,7 @@ function Home(){
 
       </div> */}
 
-      <div className="flex space-x-3">
+      {/* <div className="flex space-x-3">
 
 <div className="border border-gray-300 rounded-full p-1">
 <BiSolidMessage className="text-sm"/>
@@ -55,8 +55,7 @@ function Home(){
         <h6 className="text-black text-xs font-medium">John Doe</h6>
     </div>
 </div>
-</div>
-      </div>
+</div> */}
 <Analytics/>
 </>
     )

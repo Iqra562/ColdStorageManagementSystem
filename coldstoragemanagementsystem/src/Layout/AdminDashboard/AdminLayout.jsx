@@ -16,10 +16,10 @@ function AdminLayout() {
   return (
     <div className="flex h-screen">
       <div
-        className={`md:fixed lg:static  md:z-10  top-0 left-0 h-full md:w-full lg:w-auto bg-black bg-opacity-50  transition-transform duration-300 ${
+        className={`fixed lg:relative   z-10  top-0 left-0 h-full w-full lg:w-auto bg-black bg-opacity-50  transition-transform duration-300 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
-        onClick={closeSidebar}
+        onClick={ closeSidebar}
       >
         <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar}/>
       </div>
